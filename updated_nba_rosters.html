@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- css/js files, bootstrap css -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href= "bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="updated_nba_rosters.css"/>
+
+<!-- javascript files-->
+<script text="text/javascript" src="jquery-3.2.1.min.js"> </script>
+<script type = "text/javascript" src="bootstrap.min.js"> </script>
+
+	<title>
+	NBA Rosters
+	</title>
+
+</head>
+
+
+
+<body>
+
+<div class= "container-fluid" >
+	<!-- navigation bar using bootstrap--> 
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="nba_navbar">
+		
+			<!-- navigation bar header with NBA image -->
+			<div class ="navbar-header">
+				<a class="nav-link" href="#home"> <img class = "navbar-brand " src="http://diylogodesigns.com/blog/wp-content/uploads/2016/06/NBA-logo-png-download-free.png" style="width:100px;"> 
+				</a>
+			</div>
+
+			
+			<ul class="navbar-nav">
+					
+	    		<li class= "nav-item dropdown"> 
+	    			<a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Pacific Division </a> 
+
+	    			<div class = "dropdown-menu">
+
+	    				<a class = "dropdown-item" href="#warriors"> Golden State Warriors </a>
+	    				<a class = "dropdown-item" href="#"> Los Angeles Lakers </a>
+	    				<a class = "dropdown-item" href="#"> Los Angeles Clippers </a>
+	    				<a class = "dropdown-item" href="#"> Phoenix Suns </a>
+	    				<a class = "dropdown-item" href="#"> Sacramento Kings </a>
+
+	    				
+	    				 
+	    			</div>
+
+
+	    		</li>
+	    		
+	    		<li class= "nav-item dropdown "> 
+	    			<a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Northwest Division </a>
+
+	    			<div class = "dropdown-menu">
+	    				<a class = "dropdown-item" href="#"> Oklahoma City Thunder </a>
+	    				<a class = "dropdown-item" href="#"> Minnesota Timberwolves </a>
+	    				<a class = "dropdown-item" href="#"> Utah Jazz </a>
+	    				<a class = "dropdown-item" href="#"> Denver Nuggets </a>
+	    				<a class = "dropdown-item" href="#"> Portland Trailblazers </a>
+	    				
+	    				 
+	    			</div>
+	    		</li>
+
+	    		<li class= "nav-item dropdown "> 
+	    			<a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Southwest Division </a>
+
+	    			<div class = "dropdown-menu">
+
+	    				<a class = "dropdown-item" href="#"> San Antonio Spurs </a>
+	    				<a class = "dropdown-item" href="#"> Memphis Grizzlies </a>
+	    				<a class = "dropdown-item" href="#"> Houston Rockets </a>
+	    				<a class = "dropdown-item" href="#"> Dallas Mavericks </a>
+	    				<a class = "dropdown-item" href="#"> New Orleans Pelicans</a>
+	    				
+	    				 
+	    			</div>
+	    		</li>
+
+	    		<li class= "nav-item dropdown "> 
+	    			<a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Central Division </a>
+	    			
+	    			<div class = "dropdown-menu">
+	    				<a class = "dropdown-item" href="#"> Cleveland Cavaliers </a>
+	    				<a class = "dropdown-item" href="#"> Milwaukee Bucks </a>
+	    				<a class = "dropdown-item" href="#"> Chicago Bulls </a>
+	    				<a class = "dropdown-item" href="#"> Indiana Pacers </a>
+	    				<a class = "dropdown-item" href="#"> Detroit Pistons </a> 
+	    				
+	    				 
+	    			</div>
+	    		</li>
+
+
+	    		<li class= "nav-item dropdown "> 
+	    			<a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Atlantic Division </a>
+
+	    			<div class = "dropdown-menu">
+
+	    				<a class = "dropdown-item" href="#"> Boston Celtics</a>
+	    				<a class = "dropdown-item" href="#"> Brooklyn Nets </a>
+	    				<a class = "dropdown-item" href="#"> Philadelphia 76ers </a>
+	    				<a class = "dropdown-item" href="#"> Toronto Raptors </a>
+	    				<a class = "dropdown-item" href="#"> New York Knicks </a> 
+	    				
+	    				 
+	    			</div>
+	    		</li>
+
+	    		<li class= "nav-item dropdown "> 
+	    			<a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Southeast Division </a>
+
+
+	    			<div class = "dropdown-menu">
+	    				<a class = "dropdown-item" href="#"> Miami Heat</a>
+	    				<a class = "dropdown-item" href="#"> Charlotte Hornets </a>
+	    				<a class = "dropdown-item" href="#"> Orlando Magic </a>
+	    				<a class = "dropdown-item" href="#"> Atlanta Hawks </a>
+	    				<a class = "dropdown-item" href="#"> Washington Wizards </a> 	 
+	    			</div>
+	    		</li>
+
+
+
+
+			</ul>
+			
+		</nav>
+		<!-- end of navbar -->
+
+		
+		<!-- jumbotron for title and image -->
+		<div class = "jumbotron" id="home">
+			<div class = "container-fluid">
+				
+
+					<h1 class = "display-1 text-center" > NBA Roster Viewer </h1>
+
+					<img class= "responsive-img" src ="http://www.basketballinsiders.com/wp-content/uploads/2015/05/Finals_CurryIrving1.jpg" />
+
+					
+			</div>
+
+				
+				
+			
+		</div>
+		<!-- end of jumbotron -->
+
+
+		<!-- warriors roster -->
+		<div class = "container-fluid" id="warriors">
+			<div class= "row" id="warriors_title">
+				<div class = "col-md-3">
+					<div class = "well"> 
+						<h1> Golden State Warriors </h1>
+					
+					</div>
+				</div>
+
+				<div class = "col-md-3">
+
+					<img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" />
+
+				</div>
+
+					
+			</div>
+
+
+			<!-- first row of player info -->
+			<div class = "row">
+				
+
+				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+
+
+
+			</div>
+			<br>
+
+			<!-- second row of players -->
+			<div class = "row">
+				
+
+				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+
+
+
+			</div>
+
+			<br>
+
+
+			<!-- third row of players -->
+			<div class = "row">
+				
+
+				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+
+				<div class = "col-md-1">  </div>
+
+
+
+
+			</div>
+
+		</div>
+
+		<!-- end of warriors roster -->
+	
+
+	</div>
+	<!-- end of containter -- >
+
+</body>
+
+
+
+</html>
+

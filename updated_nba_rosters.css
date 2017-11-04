@@ -1,0 +1,25 @@
+body{
+	padding-top: 70px;
+}
+
+.jumbotron img{
+
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#warriors_logo{
+	float : left;
+	width: 100px;
+}
+
+.col-md-1{
+	
+}
+
+.player-image{
+	width:250px;
+	height:200px;
+}
