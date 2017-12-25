@@ -8,8 +8,19 @@
 <link type="text/css" rel="stylesheet" href="updated_nba_rosters.css"/>
 
 <!-- javascript files-->
-<script text="text/javascript" src="jquery-3.2.1.min.js"> </script>
-<script type = "text/javascript" src="bootstrap.min.js"> </script>
+<script type="text/javascript" src="jquery-3.2.1.min.js"> </script>
+<script type="text/javascript" src="bootstrap.min.js"> </script>
+<script type="text/javascript" src="angular.min.js"> </script>
+<script type="text/javascript" src="angular-route.min.js"> </script>
+<script type="text/javascript" src="angular-animate.js"> </script>
+<script type="text/javascript" src="app.js"> </script>
+<script type="text/javascript" src="controller.js"> </script>
+
+<script type="text/javascript">
+alert("only warriors works for now");
+</script>
+
+
 
 	<title>
 	NBA Rosters
@@ -19,9 +30,9 @@
 
 
 
-<body>
+<body ng-app = "myApp">
 
-<div class= "container-fluid" >
+<div class= "container-fluid" ng-app="myApp" ng-controller="MainController">
 	<!-- navigation bar using bootstrap--> 
 	<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="nba_navbar">
 		
@@ -39,7 +50,7 @@
 
 	    			<div class = "dropdown-menu">
 
-	    				<a class = "dropdown-item" href="#warriors"> Golden State Warriors </a>
+	    				<a class = "dropdown-item" id = "warriors_drop" href="#warriors" ng-click = "gotoWarriors"> Golden State Warriors </a>
 	    				<a class = "dropdown-item" href="#"> Los Angeles Lakers </a>
 	    				<a class = "dropdown-item" href="#"> Los Angeles Clippers </a>
 	    				<a class = "dropdown-item" href="#"> Phoenix Suns </a>
@@ -176,27 +187,58 @@
 			<div class = "row">
 				
 
-				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+				<div class = "col-md-2" style="float:left" ng-repeat="warrior in warriors" >
+
+				<!-- <playerInfo info="stephen_curry"> </playerInfo> -->
+
+
+				<ul class="player_information">
+				
+
+
+
+
+				<img class="player-image" src = "{{warrior.icon}}" ng-click = "showinfo = !showinfo"/>
+				<p> <strong>{{warrior.name}}</strong> </p> 
+				
+					
+					<li ng-show="showinfo"> <strong> Position: {{warrior.position}} </strong> </li>
+					<li ng-show="showinfo"> <strong> Height: {{warrior.height}} </strong>  </li>
+					<li ng-show="showinfo"> <strong> Weight: {{warrior.weight}} </strong> </li>
+					<li ng-show="showinfo"> <strong> Predraft: {{warrior.predraft}} </strong> </li>
+
+
+
+
+				</ul>
+
+
+				
+				</div>
+<!--
+				<div class = "col-md-1">  </div>
+				
+
+
+				</div>
+-->
+<!--				
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+				<div class = "col-md-2">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-2">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-2"> </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
-
-				<div class = "col-md-1">  </div>
-
-
+-->
 
 
 			</div>
@@ -206,23 +248,23 @@
 			<div class = "row">
 				
 
-				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+				<div class = "col-md-1" > </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
@@ -238,23 +280,23 @@
 			<div class = "row">
 				
 
-				<div class = "col-md-1" > <img  class= "responsive-img player-image" src = "https://nothinbutnets.com/wp-content/blogs.dir/155/files/2016/08/9349561-stephen-curry-nba-finals-cleveland-cavaliers-golden-state-warriors-1.jpg" />  </div>
+				<div class = "col-md-1" > </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
-				<div class = "col-md-1"> <img id="warriors_logo" class= "responsive-img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/838px-Golden_State_Warriors_logo.svg.png" /> </div>
+				<div class = "col-md-1">  </div>
 
 				<div class = "col-md-1">  </div>
 
@@ -273,7 +315,7 @@
 
 </body>
 
-
+<script type="text/javascript" src="playerInfo.js"> </script>
 
 </html>
- 
+
