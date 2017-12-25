@@ -901,7 +901,7 @@ pre code {
 
 .no-gutters > .col,
 .no-gutters > [class*="col-"] {
-  padding-right: 0;
+  padding-right: 0
   padding-left: 0;
 }
 
@@ -911,6 +911,8 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  display: inline-block;
+
 }
 
 @media (min-width: 576px) {
