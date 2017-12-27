@@ -16,10 +16,11 @@
 <script type="text/javascript" src="app.js"> </script>
 <script type="text/javascript" src="controller.js"> </script>
 
+<!--
 <script type="text/javascript">
 alert("only warriors works for now");
 </script>
-
+-->
 
 
 	<title>
@@ -148,19 +149,17 @@ alert("only warriors works for now");
 		<div class = "jumbotron" id="home">
 			<div class = "container-fluid">
 				
-
+					
 					<h1 class = "display-1 text-center" > NBA Roster Viewer </h1>
 
 					<img class= "responsive-img" src ="http://www.basketballinsiders.com/wp-content/uploads/2015/05/Finals_CurryIrving1.jpg" />
 
 					
 			</div>
-
-				
-				
-			
+	
 		</div>
 		<!-- end of jumbotron -->
+
 
 
 		<!-- warriors roster -->
@@ -193,21 +192,16 @@ alert("only warriors works for now");
 
 
 				<ul class="player_information">
-				
-
-
-
 
 				<img class="player-image" src = "{{warrior.icon}}" ng-click = "showinfo = !showinfo"/>
 				<p> <strong>{{warrior.name}}</strong> </p> 
 				
 					
-					<li ng-show="showinfo"> <strong> Position: {{warrior.position}} </strong> </li>
-					<li ng-show="showinfo"> <strong> Height: {{warrior.height}} </strong>  </li>
-					<li ng-show="showinfo"> <strong> Weight: {{warrior.weight}} </strong> </li>
-					<li ng-show="showinfo"> <strong> Predraft: {{warrior.predraft}} </strong> </li>
-
-
+				<li ng-show="showinfo"> <strong> Position: {{warrior.position}} </strong> </li>
+				<li ng-show="showinfo"> <strong> Height: {{warrior.height}} </strong>  </li>
+				<li ng-show="showinfo"> <strong> Weight: {{warrior.weight}} </strong> </li>
+				<li ng-show="showinfo"> <strong> Predraft: {{warrior.predraft}} </strong> </li>
+				
 
 
 				</ul>
@@ -215,95 +209,17 @@ alert("only warriors works for now");
 
 				
 				</div>
-<!--
-				<div class = "col-md-1">  </div>
-				
 
 
-				</div>
--->
-<!--				
 
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-2">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-2">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-2"> </div>
-
-				<div class = "col-md-1">  </div>
-
--->
-
-
-			</div>
-			<br>
+			</div> <!-- end of first row -->
+			
 
 			<!-- second row of players -->
-			<div class = "row">
-				
-
-				<div class = "col-md-1" > </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
+		
 
 
-
-
-			</div>
-
-			<br>
-
-
-			<!-- third row of players -->
-			<div class = "row">
-				
-
-				<div class = "col-md-1" > </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-				<div class = "col-md-1">  </div>
-
-
-
-
-			</div>
+			
 
 		</div>
 
