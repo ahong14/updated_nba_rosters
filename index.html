@@ -191,16 +191,18 @@ alert("only warriors works for now");
 				<!-- <playerInfo info="stephen_curry"> </playerInfo> -->
 
 
-				<ul class="player_information">
-
 				<img class="player-image" src = "{{warrior.icon}}" ng-click = "showinfo = !showinfo"/>
 				<p> <strong>{{warrior.name}}</strong> </p> 
+
+				<ul class="player_information" class = "fade" ng-show="showinfo"  >
+
+				
 				
 					
-				<li ng-show="showinfo"> <strong> Position: {{warrior.position}} </strong> </li>
-				<li ng-show="showinfo"> <strong> Height: {{warrior.height}} </strong>  </li>
-				<li ng-show="showinfo"> <strong> Weight: {{warrior.weight}} </strong> </li>
-				<li ng-show="showinfo"> <strong> Predraft: {{warrior.predraft}} </strong> </li>
+				<li> <strong> Position: {{warrior.position}} </strong> </li>
+				<li> <strong> Height: {{warrior.height}} </strong>  </li>
+				<li> <strong> Weight: {{warrior.weight}} </strong> </li>
+				<li> <strong> Predraft: {{warrior.predraft}} </strong> </li>
 
 				</ul>
 
