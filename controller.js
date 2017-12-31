@@ -17,11 +17,60 @@ roster.controller('MainController', ['$scope', function($scope) {
   	{
   		$('html, body').animate(
   		{
-  			scrollTop: $('#warriors_title').offset().top
+  			scrollTop: $('#warriors').offset().top
   		},500);
   	});
 
-  	//array of players
+
+  //animate to lakers roster
+  $scope.gotoLakers = $('#lakers_drop').click(function()
+    {
+      $('html, body').animate(
+      {
+        scrollTop: $('#lakers').offset().top
+      },500);
+    });
+
+
+
+  //animate to clippers roster
+  $scope.gotoClippers = $('#clippers_drop').click(function()
+    {
+      $('html, body').animate(
+      {
+        scrollTop: $('#clippers').offset().top
+      },500);
+    });
+
+
+
+   $scope.gotoSuns = $('#suns_drop').click(function()
+    {
+      $('html, body').animate(
+      {
+        scrollTop: $('#suns').offset().top
+      },500);
+    });
+
+
+
+    $scope.gotoKings = $('#kings_drop').click(function()
+    {
+      $('html, body').animate(
+      {
+        scrollTop: $('#kings').offset().top
+      },500);
+    });
+
+
+
+
+
+
+
+
+
+  	//array of players for each team
   	$scope.warriors = [
   		{
 			  icon: "http://i.cdn.turner.com/drp/nba/warriors/sites/default/files/gettyimages-494746488_master.jpg",
@@ -81,7 +130,7 @@ roster.controller('MainController', ['$scope', function($scope) {
 
       {
         icon: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Shaun_Livingston_with_Warriors_%28cropped%29.jpg",
-        name: 'Shaun Livginston',
+        name: 'Shaun Livingston',
         position: 'G',
         height: "6-7",
         weight: '192',
@@ -186,36 +235,216 @@ roster.controller('MainController', ['$scope', function($scope) {
     }
 
 
-      
-
-
-
-
-  	] // end of warriors array 
+  ]; // end of warriors array 
     
+  $scope.lakers = [
 
-  // $scope.stephen_curry = {
+    {
+      icon: "https://lasentinel.net/wp-content/uploads/sites/5/2017/10/Lakers_4_Lonzo-Ball_AP.jpg",
+      name: 'Lonzo Ball',
+      position: 'G',
+      height: "6'6",
+      weight: '190',
+      predraft: 'UCLA'
+    },
 
-  // 	icon: "http://i.cdn.turner.com/drp/nba/warriors/sites/default/files/gettyimages-494746488_master.jpg",
-  // 	name: 'Stephen Curry',
-  // 	position: 'G',
-  // 	height: "6'3",
-  // 	weight: '190',
-  // 	predraft: 'Davidson'
+    {
+      icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Flakeshowlife.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F10%2F856883436-denver-nuggets-v-los-angeles-lakers.jpg.jpg&c=sc&w=850&h=560",
+      name: 'Kentavious Caldwell-Pope',
+      position: 'G',
+      height: "6-5",
+      weight: '205',
+      predraft: 'Georgia'
+    },
 
-  // };
+    {
+      icon:"http://media.nbclosangeles.com/images/652*368/Brandon-Ingram-knee-injury-10-28-16.jpg",
+      name:'Brandon Ingram',
+      position:'F',
+      height:"6-9",
+      weight: '190',
+      predraft: '205'
+    },
 
+    {
+      icon: "http://www.trbimg.com/img-5617eacf/turbine/la-sp-lakers-raptors-20151009",
+      name: 'Julius Randle',
+      position: 'F',
+      height: "6-9",
+      weight: '250',
+      predraft: 'Kentucky'
+
+    },
+
+    {
+      icon: 'https://imagesvc.timeincapp.com/v3/fan/image?url=https://lakeshowlife.com/wp-content/uploads/getty-images/2017/10/859362708-sacramento-kings-v-los-angeles-lakers.jpg.jpg&',
+      name: 'Brook Lopez',
+      position: 'C',
+      height: '7-0',
+      weight: '268',
+      predraft: 'Stanford'
+
+    }
+
+  ]; //lakers array 
+
+
+  $scope.clippers = [
+    {
+      icon:"https://www.gannett-cdn.com/-mm-/21e14f7da97e45a4d8d1b4017db5c0e0dbe1813e/c=0-125-2812-3874&r=537&c=0-0-534-712/local/-/media/2017/11/22/USATODAY/USATODAY/636469705383151356-USATSI-10371432.jpg",
+      name: 'Patrick Beverley',
+      position: 'G',
+      height: "6'1",
+      weight: '185',
+      predraft:'Arkansas'
+    },
+
+    {
+      icon: "http://www.rantsports.com/nba/files/2015/06/austin-rivers.jpg",
+      name: 'Austin Rivers',
+      position: 'G',
+      height: "6'4",
+      weight: '200',
+      predraft: 'Duke'
+    },
+
+    {
+      icon: "https://clutchpoints.com/wp-content/uploads/2017/10/Danilo-Gallinari-Clippers.jpg",
+      name: 'Danilo Gallinari',
+      position: 'F',
+      height: "6-10",
+      weight: '225',
+      predraft: 'Italy'
+    },
+
+    {
+      icon: "http://images.performgroup.com/di/library/sporting_news/3e/b5/blake-griffin-022417-getty-ftr_hu3iiwk49nzh1bhbdf66o3xjn.jpg?t=1893858370&w=960&quality=70",
+      name: 'Blake Griffin',
+      position: 'F',
+      height: "6-10",
+      weight: '251',
+      predraft: 'Oklahoma'
+    },
+
+    {
+      icon: "http://images.performgroup.com/di/library/sporting_news/83/c6/deandre-jordan-clippers-getty-ftr-012417_a1825nxlm22o1pd9lxdwm3hf8.jpg?t=-733620711&w=960&quality=70",
+      name: 'DeAndre Jordan',
+      position: 'C',
+      height:"6-11",
+      weight: '265',
+      predraft: "Texas A&M"
+    }
+
+  ];
+
+
+  $scope.suns = [
+    {
+      icon: "https://valleyofthesuns.com/wp-content/blogs.dir/69/files/2016/10/9590357-tyler-ulis-nba-preseason-utah-jazz-phoenix-suns.jpg",
+      name: 'Tyler Ulis',
+      position: 'G',
+      height: "5-10",
+      weight: '150',
+      predraft: 'Kentucky'
+    },
+
+    {
+      icon: "https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2016/09/09/devin_booker_top_100_.jpg?itok=JkZfX9q5",
+      name: 'Devin Booker',
+      position: 'G',
+      height: "6-4",
+      weight: '214',
+      predraft: 'Kentucky'
+    },
+
+     {
+      icon: "http://uproxx.files.wordpress.com/2017/12/gettyimages-862918558.jpg?quality=100&w=650",
+      name: 'Josh Jackson',
+      position: 'F',
+      height: '6-8',
+      weight: '205',
+      predraft: 'Kansas'
+    },
+
+     {
+      icon: "http://i.cdn.turner.com/drp/nba/suns/sites/default/files/chriss102016_777.jpg",
+      name: 'Marquese Chriss',
+      position: 'F',
+      height: "6-10",
+      weight: '233',
+      predraft: 'Washington'
+    },
+
+
+    {
+      icon: 'https://sports.cbsimg.net/images/visual/whatshot/102115_tyson.jpg',
+      name: 'Tyson Chandler',
+      position: 'C',
+      height: '7-1',
+      weight: '240',
+      predraft: 'Manuel Dominguez (H.S.)'
+    }
+  ];
+
+
+  $scope.kings = [
+    {
+      icon: "http://www.kentucky.com/sports/college/kentucky-sports/ex-cats/v6bbnu/picture176739596/alternates/FREE_1140/Fox_4",
+      name:"De'Aaron Fox",
+      position: 'G',
+      height: '6-3',
+      weight: '175',
+      predraft: 'Kentucky'
+    },
+
+    {
+      icon: "http://a.espncdn.com/photo/2017/0315/r190586_608x342_16-9.jpg",
+      name: 'Buddy Hield',
+      position: 'G',
+      height: '6-4',
+      weight: '214',
+      predraft: 'Oklahoma'
+    },
+
+    {
+      icon: "http://i.cdn.turner.com/drp/nba/kings/sites/default/files/styles/hi_res_full_width/public/garrett.jpg?itok=h_OSG8Lp",
+      name: 'Garrett Temple',
+      position: 'F',
+      height: '6-6',
+      weight: '195',
+      predraft: 'LSU'
+    },
+
+    {
+      icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Faroyalpain.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F11%2F873391590-philadelphia-76ers-v-sacramento-kings.jpg.jpg&c=sc&w=850&h=560",
+      name: 'Zach Randolph',
+      position: 'F',
+      height: '6-9',
+      weight:'260',
+      predraft:'Michigan State'
+    },
+
+    {
+      icon: "http://i.cdn.turner.com/drp/nba/kings/sites/default/files/styles/hi_res_full_width/public/cauley_stein_main.jpg?itok=cyn3-AgX",
+      name: 'Willy Cauly-Stein',
+      position: 'C',
+      height: '7-0',
+      weight: '240',
+      predraft: 'Kentucky'
+    }
+
+  ];
   
-  // 	icon: 
-  // 	name: 
-  // 	position: 
-  // 	height: 
-  // 	weight: 
-  // 	predraft: 
+ 
+}]); //end of controller
  
 
-  
 
-  
-  	
-}]);
+
+
+ //   icon: 
+  //  name: 
+  //  position: 
+  //  height: 
+  //  weight: 
+  //  predraft: 
