@@ -12,62 +12,15 @@ roster.controller('MainController', ['$scope', function($scope) {
   		},500);
 	});
 
-  //animate to warriors roster
-  $scope.gotoWarriors = $('#warriors_drop').click(function()
-  	{
-  		$('html, body').animate(
-  		{
-  			scrollTop: $('#warriors').offset().top
-  		},500);
-  	});
-
-
-  //animate to lakers roster
-  $scope.gotoLakers = $('#lakers_drop').click(function()
+  //scoll animation to roster
+  $scope.gotoTeam = $('.dropdown-item').click(function()
+  {
+    $('html, body').animate(
     {
-      $('html, body').animate(
-      {
-        scrollTop: $('#lakers').offset().top
-      },500);
-    });
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    },500);
 
-
-
-  //animate to clippers roster
-  $scope.gotoClippers = $('#clippers_drop').click(function()
-    {
-      $('html, body').animate(
-      {
-        scrollTop: $('#clippers').offset().top
-      },500);
-    });
-
-
-
-   $scope.gotoSuns = $('#suns_drop').click(function()
-    {
-      $('html, body').animate(
-      {
-        scrollTop: $('#suns').offset().top
-      },500);
-    });
-
-
-
-    $scope.gotoKings = $('#kings_drop').click(function()
-    {
-      $('html, body').animate(
-      {
-        scrollTop: $('#kings').offset().top
-      },500);
-    });
-
-
-
-
-
-
-
+  })
 
 
   	//array of players for each team
@@ -433,7 +386,277 @@ roster.controller('MainController', ['$scope', function($scope) {
       predraft: 'Kentucky'
     }
 
+  ]
+
+  $scope.thunders = [
+    {
+      icon: "https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/10/22/russell-westbrook-thunder-nuggets.jpg",
+      name: 'Russell Westbrook',
+      position: 'G',
+      height: '6-3',
+      weight: '200',
+      predraft: 'UCLA'
+
+    },
+
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/101/693/hi-res-b803b9ce68f8953cb7f26050aa97cd1e_crop_north.jpg?1412961253&w=630&h=420",
+      name: 'Andre Roberson',
+      position: 'G',
+      height: '6-7',
+      weight: '210',
+      predraft: 'Colorado'
+
+    },
+
+
+    {
+      icon: "https://cdn.inquisitr.com/wp-content/uploads/2017/10/goals-for-paul-george-in-2017-18.jpg",
+      name: 'Paul George',
+      position: 'F',
+      height: '6-9',
+      weight: '220',
+      predraft: 'Fresno State'
+
+    },
+
+   
+    {
+      icon: "http://stmedia.startribune.com/images/Melo3.JPG",
+      name: 'Carmelo Anthony',
+      position: 'F',
+      height: '6-8',
+      weight: '240',
+      predraft: 'Syracuse'
+
+    },
+
+    {
+      icon: "https://fansided.com/wp-content/blogs.dir/229/files/2016/01/steven-adams-nba-dallas-mavericks-oklahoma-city-thunder.jpg",
+      name: 'Steven Adams',
+      position: 'C',
+      height: '7-0',
+      weight: '255',
+      predraft: 'Pittsburgh'
+
+    }
+  ],
+
+  $scope.timberwolves = [
+    {
+      icon: "https://dunkingwithwolves.com/wp-content/uploads/getty-images/2017/11/876911676-minnesota-timberwolves-v-charlotte-hornets.jpg.jpg",
+      name: 'Jeff Teague',
+      position: 'G',
+      height: '6-2',
+      weight: '186',
+      predraft: 'Wake Forest'
+
+    },
+
+    {
+      icon: "http://images.performgroup.com/di/library/sportal_com_au/52/43/butler_1ejzzhtao57t7135tn5egs1c4m.jpg?w=1280&h=720&quality=100",
+      name: 'Jimmy Butler',
+      position: 'G',
+      height: '6-7',
+      weight: '231',
+      predraft: 'Marquette'
+    },
+
+
+    {
+      icon: "http://hoopshabit.com/wp-content/uploads/usat-images/2016/04/9882981-nba-chicago-bulls-at-minnesota-timberwolves.jpeg",
+      name: 'Andrew Wiggins',
+      position: 'F',
+      height: '6-8',
+      weight: '199',
+      predraft: 'Kansas'
+    },
+
+
+    {
+      icon: "https://dunkingwithwolves.com/wp-content/uploads/getty-images/2017/10/859190662-golden-state-warriors-v-minnesota-timberwolves.jpg.jpg",
+      name: 'Taj Gibson',
+      position: 'F',
+      height: '6-9',
+      weight: '236',
+      predraft: 'USC'
+    },
+
+
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/544/793/hi-res-793ae8150a445f243bbe352aee3896a7_crop_north.jpg?1447419508&w=630&h=420",
+      name: 'Karl Anthony-Towns',
+      position: 'C',
+      height: '7-0',
+      weight: '244',
+      predraft: 'Kentucky'
+    }
+
+  ],
+
+
+  $scope.jazz = [
+    {
+      icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https://dunkingwithwolves.com/wp-content/uploads/getty-images/2017/10/858465560-maccabi-haifa-v-utah-jazz.jpg.jpg&",
+      name: 'Ricky Rubio',
+      position: 'G',
+      height: '6-4',
+      weight: '190',
+      predraft: 'Spain'
+    },
+
+
+    {
+      icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fthejnotes.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F10%2F857497856-sydney-kings-v-utah-jazz.jpg.jpg&c=sc&w=850&h=560",
+      name: 'Donovan Mitchell',
+      position: 'G',
+      height: '6-3',
+      weight: '215',
+      predraft: 'Louisville'
+
+    },
+
+
+    {
+      icon:"https://img.bleacherreport.net/img/images/photos/003/676/761/hi-res-3783a64e5ea73eb22d3567d42a51c44d_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Joe Ingles', 
+      position: 'F', 
+      height: '6-8',
+      weight: '226',
+      predraft: 'Austrailia'
+
+    },
+
+
+    {
+      icon: "http://a.espncdn.com/photo/2017/0512/r208781_608x342_16-9.jpg",
+      name: 'Derrick Favors',
+      position: 'F',
+      height: '6-10',
+      weight: '265',
+      predraft: 'Georgia Tech'
+
+    },
+
+
+    {
+      icon: "http://uproxx.files.wordpress.com/2017/02/rudy-gobert1.jpg?quality=100&w=650",
+      name: 'Rudy Gobert',
+      position: 'C',
+      height: '7-1',
+      weight: '245',
+      predraft: 'France'
+
+    }
+
+  ],
+
+  $scope.nuggets = [
+    {
+      icon: "http://images.performgroup.com/di/library/omnisport/8b/70/emmanuel-mudiay-11415-usnews-getty-ftr_nudfsbon5v4c1h55uj68zvsm0.jpg?t=-762343448",
+      name: 'Emmanuel Mudiay',
+      position: 'G',
+      height: '6-5',
+      weight: '200',
+      predraft: 'China'
+    },
+
+    {
+      icon: "http://a.espncdn.com/photo/2017/0218/r181841_608x342_16-9.jpg",
+      name: 'Jamal Murray',
+      position: 'G',
+      height: '6-4',
+      weight: '207',
+      predraft: 'Kentucky'
+    },
+
+    {
+      icon: "http://bsndenver.com/wp-content/uploads/2016/04/gary-harris-0223.jpg",
+      name: 'Gary Harris',   
+      position: 'G',
+      height: '6-4',
+      weight: '210',
+      predraft: 'Michigan State'
+    },
+
+    {
+      icon: "http://media.thedenverchannel.com/photo/2016/01/03/kenneth-faried_Fotor_1451833532486_29313957_ver1.0_640_480.jpg",
+      name: 'Kenneth Faried',
+      position: 'F',
+      height: '6-8',
+      weight: '228',
+      predraft: 'Morehead State'
+    },
+
+    {
+      icon: "http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F0117%2Fr44865_1296x729_16%2D9.jpg",
+      name: 'Nikola Jokic',
+      position: 'C',
+      height: '6-10',
+      weight: '250',
+      predraft: 'Serbia'
+    }
+
+
+
+  ],
+
+
+  $scope.trailblazers = [
+    {
+      icon: "http://www.sportsonearth.com/assets/images/1/9/2/139887192/cuts/GettyImages_460640784_n0lywddm_y242pu4e.jpg",
+      name: 'Damian Lillard',
+      position: 'G',
+      height: '6-3',
+      weight: '195',
+      predraft: 'Weber State'
+    },
+
+
+    {
+      icon: "https://img.bleacherreport.net/img/images/photos/003/671/763/hi-res-d86ce8b701b255f1564d695a57fc5b40_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'C.J. McCollum',
+      position: 'G',
+      height: '6-3',
+      weight: '190',
+      predraft: 'Lehigh'
+    },
+
+
+    {
+      icon: "https://clutchpoints.com/wp-content/uploads/2017/08/Evan-Turner-Jennifer-Stewart-USATSI-e1503059976184.jpg",
+      name: 'Evan Turner',
+      position: 'F',
+      height:'6-7',
+      weight:'220',
+      predraft: 'Ohio State'
+    },
+
+
+    {
+      icon: "https://d13csqd2kn0ewr.cloudfront.net/uploads/image/file/153507/cropped_GettyImages-503013750.jpg?ts=1452489832",
+      name: 'Al-Farouq Aminu',
+      position: 'F',
+      height: '6-9',
+      weight: '220',
+      predraft: 'Wake Forest'
+    },
+
+
+    {
+      icon: "http://oregonsportsnews.com/wp-content/uploads/2017/08/JusufNurkic.jpg",
+      name: 'Jusuf Nurkic',
+      position: 'C',
+      height: '7-0',
+      weight: '280',
+      predraft:'Bosnia and Herzegovina'
+    }
+
+
   ];
+
+
+
   
  
 }]); //end of controller
