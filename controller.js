@@ -14,13 +14,17 @@ roster.controller('MainController', ['$scope', function($scope) {
 
   //scoll animation to roster
   $scope.gotoTeam = $('.dropdown-item').click(function()
-  {
+  { 
+    
+
     $('html, body').animate(
     {
       scrollTop: $( $.attr(this, 'href') ).offset().top
     },500);
 
-  })
+  });
+
+
 
 
   	//array of players for each team
@@ -653,12 +657,251 @@ roster.controller('MainController', ['$scope', function($scope) {
     }
 
 
-  ];
+  ],
 
 
+  $scope.spurs = [
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/002/635/714/hi-res-452302161-tony-parker-of-the-san-antonio-spurs-drives-to-the_crop_north.jpg?1385765530&w=630&h=420",
+      name: 'Tony Parker',
+      position: 'G',
+      height: '6-2',
+      weight: '185',
+      predraft: 'France'
+
+    },
+
+    {
+      icon: "http://thesportsfanjournal.com/wp-content/uploads/2012/05/danny-green-san-antonio-spurs.jpg",
+      name: 'Danny Green',
+      position: 'G',
+      height: '6-6',
+      weight: '215',
+      predraft: 'North Carolina'
+    },
+
+    {
+      icon: "http://www.noticiassin.com/wp-content/uploads/2014/12/Kawhi-Leonard.jpg",
+      name: 'Kawhi Leonard',
+      position: 'F',
+      height: '6-7',
+      weight: '260',
+      predraft: 'San Diego State'
+    },
+
+    {
+      icon: "http://ww4.hdnux.com/photos/43/05/21/9196667/3/rawImage.jpg",
+      name: 'LaMarcus Aldridge',
+      position: 'F',
+      height: '6-11',
+      weight: '260',
+      predraft: 'Texas'
+    },
+
+
+    {
+      icon: "http://www.espnsa.com/wp-content/uploads/2017/01/Pau2-e1484940290611.jpg",
+      name: 'Pau Gasol',
+      position: 'C',
+      height: '7-0',
+      weight: '250',
+      predraft: 'Spain'
+    }
+
+  ],
+
+
+  $scope.grizzlies = [
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/647/141/ee95d67ca7a8afeca79d93afec516857_crop_north.jpg?1481914896&w=630&h=420",
+      name: 'Mike Conley',
+      position: 'G',
+      height: '6-1',
+      weight: '175',
+      predraft: 'Ohio State'
+    },
+
+    {
+      icon: "https://localtvwreg.files.wordpress.com/2017/10/fullsizerender-4.jpg?quality=85&strip=all&w=770",
+      name: 'Tyreke Evans',
+      position: 'G',
+      height: '6-6',
+      weight: '220',
+      predraft: 'Memphis'
+    },
+
+    {
+      icon: "http://a.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F1107%2Fr149826_1296x729_16%2D9.jpg",
+      name: 'Chandler Parsons',
+      position: 'F',
+      height: '6-10',
+      weight: '230',
+      predraft: 'Florida'
+    },
+
+    {
+      icon: "https://www.gannett-cdn.com/-mm-/34bd8cdf4affcc8827ac1c121b8070de46a6980e/c=0-19-629-374&r=x329&c=580x326/local/-/media/2016/02/21/Montgomery/Montgomery/635916939994529084-JaMychal-Green-AP-Memphis-Grizzlies.jpg",
+      name: 'JaMychal Green',
+      position: 'F',
+      height: '6-9',
+      weight: '227',
+      predraft: 'Alabama'
+    },
+
+
+    {
+      icon:"https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/54607/0859035001431876733_filepicker.jpg",
+      name: 'Marc Gasol',
+      position: 'C',
+      height: '7-1',
+      weight: '225',
+      predraft: 'Spain'
+    }
+
+  ],
+
+  $scope.rockets = [
+    {
+      icon: "https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/10/20/chris-paul-injury-update.jpg",
+      name: 'Chris Paul',
+      position: 'G',
+      height: '6-0',
+      weight: '175',
+      predraft: 'Wake Forest'
+    },
+
+
+    {
+      icon: "https://www.gannett-cdn.com/-mm-/2ffe081239036ea1aef01395e7196d58149bfa6a/c=0-0-2830-2128&r=x404&c=534x401/local/-/media/2016/11/02/USATODAY/USATODAY/636136834240698331-USP-NBA--Houston-Rockets-at-Los-Angeles-Lakers.jpg",
+      name: 'James Harden',
+      position: 'G',
+      height: '6-5',
+      weight: '220',
+      predraft: 'Arizona State'
+    },
+
+
+    {
+      icon: "https://d3d2maoophos6y.cloudfront.net/wp-content/uploads/sites/5/2015/05/19201510/tariza.jpg",
+      name: 'Trevor Ariza',
+      position: 'F',
+      height: '6-8',
+      weight: '215',
+      predraft: 'UCLA'
+    },
 
   
- 
+    {
+      icon: "http://images.performgroup.com/di/library/sporting_news/80/2c/ryan-anderson-getty-ftr-111516_czaqq1pdjkub10glfi9ln1r87.jpg?t=1761798520&w=960&quality=70",
+      name: 'Ryan Anderson',
+      position: 'F',
+      height: '6-10',
+      weight: '240',
+      predraft: 'California'
+    },
+
+     {
+      icon: "http://ww2.hdnux.com/photos/60/16/04/12640545/3/920x920.jpg",
+      name: 'Clint Capela',
+      position: 'C',
+      height: '6-10',
+      weight: '240',
+      predraft: 'Switzerland'
+    }
+
+  ],
+
+
+  $scope.mavericks = [
+    {
+      icon: "https://usathoopshype.files.wordpress.com/2017/10/dennissmithjr_3.jpg?w=1000&h=600&crop=1",
+      name: 'Dennis Smith Jr.',
+      height: '6-3',
+      weight: '195',
+      predraft: 'North Carolina State'
+    },
+
+    {
+      icon: "http://www.dailyherald.com/storyimage/DA/20151202/sports/312029980/AR/0/AR-312029980.jpg&updated=201512020120&MaxW=800&maxH=800&noborder",
+      name: 'Wesley Matthews',
+      height: '6-5',
+      weight: '220',
+      predraft: 'Marquette'
+    },
+
+    {
+      icon: "http://www.wfaa.com/img/resize/content.wfaa.com/photo/2016/10/05/1005_harrison_barnes_1475701870683_6368311_ver1.0.jpg?preset=534-401",
+      name: 'Harrison Barnes',
+      height: '6-8',
+      weight: '225',
+      predraft: 'North Carolina'
+    },
+
+    {
+      icon: "http://www4.pictures.zimbio.com/gi/Dirk+Nowitzki+Miami+Heat+v+Dallas+Mavericks+ZqWg_mW1bz7l.jpg",
+      name: 'Dirk Nowitzki',
+      height: '7-0',
+      weight: '245',
+      predraft: 'Germany'
+    },
+
+    {
+      icon: "https://s3media.247sports.com/Uploads/Assets/168/448/5448168.jpg",
+      name: 'Nerlens Noel',
+      height: '6-11',
+      weight: '228',
+      predraft: 'Kentucky'
+    }
+
+  ],
+
+  $scope.pelicans = [
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/AuhmYhYP_KrUFJEiEtuuNvddxPI=/0x0:4256x2832/1200x800/filters:focal(1596x521:2276x1201)/cdn.vox-cdn.com/uploads/chorus_image/image/57458343/usa_today_10330627.0.jpg",
+      name: 'Rajon Rondo',
+      height: '6-1',
+      weight: '186',
+      predraft: 'Kentucky'
+    },
+
+
+    {
+      icon: "http://images.performgroup.com/di/library/omnisport/4/7/jrue-holiday_1eczpq0wy8wor1x550d2v9x8fx.jpg?t=-1646870453",
+      name: 'Jrue Holiday',
+      height: '6-4',
+      weight: '205',
+      predraft: 'UCLA'
+    },
+
+
+    {
+      icon: "https://usathoopshype.files.wordpress.com/2016/10/etwaun-moore-pels-3.jpg?w=1000&h=692",
+      name: "E'Twaun Moore",
+      height: '6-4',
+      weight: '191',
+      predraft: 'Purdue'
+    },
+
+
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/Exjrvz344wzwVtHLwoOWjdd6sYg=/0x0:3999x2666/1200x800/filters:focal(1412x845:2050x1483)/cdn.vox-cdn.com/uploads/chorus_image/image/51750013/usa_today_9638835.0.jpg",
+      name: 'Anthony Davis',
+      height: '6-11',
+      weight: '253',
+      predraft: 'Kentucky'
+    },
+
+
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/661/073/hi-res-6b40d25b6a54467f4a1a1a28bc71b3b9_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'DeMarcus Cousins',
+      height: '6-11',
+      weight: '270',
+      predraft: 'Kentucky'
+    }
+
+  ];
+
 }]); //end of controller
  
 

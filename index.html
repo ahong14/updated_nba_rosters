@@ -47,11 +47,11 @@ alert("only warriors works for now");
 
 	    			<div class = "dropdown-menu">
 
-	    				<a class = "dropdown-item" href="#warriors" ng-click = "gotoTeam"> Golden State Warriors </a>
-	    				<a class = "dropdown-item" href="#lakers" ng-click = "gotoTeam"> Los Angeles Lakers </a>
-	    				<a class = "dropdown-item" href="#clippers" ng-click="gotoTeam"> Los Angeles Clippers </a>
-	    				<a class = "dropdown-item" href="#suns" ng-click="gotoTeam"> Phoenix Suns </a>
-	    				<a class = "dropdown-item" href="#kings" ng-click="gotoTeam"> Sacramento Kings </a>
+	    				<a class = "dropdown-item" href="#warriors" 	ng-click = "gotoTeam"> Golden State Warriors </a>
+	    				<a class = "dropdown-item" href="#lakers" 		ng-click = "gotoTeam"> Los Angeles Lakers </a>
+	    				<a class = "dropdown-item" href="#clippers" 	ng-click="gotoTeam"> Los Angeles Clippers </a>
+	    				<a class = "dropdown-item" href="#suns" 		ng-click="gotoTeam"> Phoenix Suns </a>
+	    				<a class = "dropdown-item" href="#kings" 		ng-click="gotoTeam"> Sacramento Kings </a>
 
 	    				
 	    				 
@@ -64,10 +64,10 @@ alert("only warriors works for now");
 	    			<a class = "nav-link dropdown-toggle" href="#" data-toggle="collapse"> Northwest Division </a>
 
 	    			<div class = "dropdown-menu">
-	    				<a class = "dropdown-item" href="#thunder" ng-click = "gotoTeam"> Oklahoma City Thunder </a>
+	    				<a class = "dropdown-item" href="#thunder" 		ng-click = "gotoTeam"> Oklahoma City Thunder </a>
 	    				<a class = "dropdown-item" href="#timberwolves" ng-click = "gotoTeam" > Minnesota Timberwolves </a>
-	    				<a class = "dropdown-item" href="#jazz" ng-click = "gotoTeam"> Utah Jazz </a>
-	    				<a class = "dropdown-item" href="#nuggets" ng-click = "gotoTeam"> Denver Nuggets </a>
+	    				<a class = "dropdown-item" href="#jazz" 		ng-click = "gotoTeam"> Utah Jazz </a>
+	    				<a class = "dropdown-item" href="#nuggets" 		ng-click = "gotoTeam"> Denver Nuggets </a>
 	    				<a class = "dropdown-item" href="#trailblazers" ng-click = "gotoTeam"> Portland Trailblazers </a>
 	    				
 	    				 
@@ -79,11 +79,11 @@ alert("only warriors works for now");
 
 	    			<div class = "dropdown-menu">
 
-	    				<a class = "dropdown-item" id="spurs_drop" href="#"> San Antonio Spurs </a>
-	    				<a class = "dropdown-item" href="#"> Memphis Grizzlies </a>
-	    				<a class = "dropdown-item" href="#"> Houston Rockets </a>
-	    				<a class = "dropdown-item" href="#"> Dallas Mavericks </a>
-	    				<a class = "dropdown-item" href="#"> New Orleans Pelicans</a>
+	    				<a class = "dropdown-item" href="#spurs" 		ng-click = "gotoTeam"> San Antonio Spurs </a>
+	    				<a class = "dropdown-item" href="#grizzlies"	ng-click = "gotoTeam"> Memphis Grizzlies </a>
+	    				<a class = "dropdown-item" href="#rockets"		ng-click = "gotoTeam"> Houston Rockets </a>
+	    				<a class = "dropdown-item" href="#mavericks"	ng-click = "gotoTeam"> Dallas Mavericks </a>
+	    				<a class = "dropdown-item" href="#pelicans"		ng-click = "gotoTeam"> New Orleans Pelicans</a>
 	    				
 	    				 
 	    			</div>
@@ -614,19 +614,232 @@ alert("only warriors works for now");
 
 
 
+		<!-- start of spurs roster -->
+		<div clas="container-fluid" id="spurs">
+			<div class="row" id = "spurs_title">
+				<div class = "col-md-3">
+					<div class = "well">
+						<h1> San Antonio Spurs </h1>
+
+					</div>
+
+				</div>
+
+				<div class = "col-md-3">
+					<img class="team_logo" class = "responsive-img" src = "http://ww3.hdnux.com/photos/41/05/33/8672978/3/rawImage.png"/>
+
+				</div>
+
+			</div> 
+
+
+			<div class="row">
+				<div class = "col-md-2" style="float:left" ng-repeat="spur in spurs" >
+
+					<!-- <playerInfo info="stephen_curry"> </playerInfo> -->
+
+
+					<ul class="player_information">
+
+					<img class="player-image" src = "{{spur.icon}}" ng-click = "showinfo = !showinfo"/>
+					<p> <strong>{{spur.name}}</strong> </p> 
+					
+						
+					<li ng-show="showinfo" > <strong> Position: {{spur.position}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Height: {{spur.height}} </strong>  </li>
+					<li ng-show="showinfo" > <strong> Weight: {{spur.weight}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Predraft: {{spur.predraft}} </strong> </li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>  <!-- end of spurs roster -->
+
+
+		<!-- start of spurs roster -->
+		<div clas="container-fluid" id="grizzlies">
+			<div class="row" id = "grizzlies_title">
+				<div class = "col-md-3">
+					<div class = "well">
+						<h1> Memphis Grizzlies </h1>
+
+					</div>
+
+				</div>
+
+				<div class = "col-md-3">
+					<img class="team_logo" class = "responsive-img" src = "http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/mem.png"/>
+
+				</div>
+
+			</div> 
+
+
+			<div class="row">
+				<div class = "col-md-2" style="float:left" ng-repeat="griz in grizzlies" >
+
+					<!-- <playerInfo info="stephen_curry"> </playerInfo> -->
+
+
+					<ul class="player_information">
+
+					<img class="player-image" src = "{{griz.icon}}" ng-click = "showinfo = !showinfo"/>
+					<p> <strong>{{griz.name}}</strong> </p> 
+					
+						
+					<li ng-show="showinfo" > <strong> Position: {{griz.position}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Height: {{griz.height}} </strong>  </li>
+					<li ng-show="showinfo" > <strong> Weight: {{griz.weight}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Predraft: {{griz.predraft}} </strong> </li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>  <!-- end of grizzlies roster -->
+
+
+		<!-- start of rockets roster -->
+		<div clas="container-fluid" id="rockets">
+			<div class="row" id = "rockets_title">
+				<div class = "col-md-3">
+					<div class = "well">
+						<h1> Houston Rockets </h1>
+
+					</div>
+
+				</div>
+
+				<div class = "col-md-3">
+					<img class="team_logo" class = "responsive-img" src = "http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/hou.png"/>
+
+				</div>
+
+			</div> 
+
+
+			<div class="row">
+				<div class = "col-md-2" style="float:left" ng-repeat="rocket in rockets" >
+
+					<!-- <playerInfo info="stephen_curry"> </playerInfo> -->
+
+
+					<ul class="player_information">
+
+					<img class="player-image" src = "{{rocket.icon}}" ng-click = "showinfo = !showinfo"/>
+					<p> <strong>{{rocket.name}}</strong> </p> 
+					
+						
+					<li ng-show="showinfo" > <strong> Position: {{rocket.position}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Height: {{rocket.height}} </strong>  </li>
+					<li ng-show="showinfo" > <strong> Weight: {{rocket.weight}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Predraft: {{rocket.predraft}} </strong> </li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>  <!-- end of rockets roster -->
+
+
+		<!-- start of rockets roster -->
+		<div clas="container-fluid" id="mavericks">
+			<div class="row" id = "mavericks_title">
+				<div class = "col-md-3">
+					<div class = "well">
+						<h1> Dallas Mavericks </h1>
+
+					</div>
+
+				</div>
+
+				<div class = "col-md-3">
+					<img class="team_logo" class = "responsive-img" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr2Pi4bHcGTMqtTQCU5zNmZ8lmofSswwPEauVfbxBAESY9ETuo"/>
+
+				</div>
+
+			</div> 
+
+
+			<div class="row">
+				<div class = "col-md-2" style="float:left" ng-repeat="maverick in mavericks" >
+
+					<!-- <playerInfo info="stephen_curry"> </playerInfo> -->
+
+
+					<ul class="player_information">
+
+					<img class="player-image" src = "{{maverick.icon}}" ng-click = "showinfo = !showinfo"/>
+					<p> <strong>{{maverick.name}}</strong> </p> 
+					
+						
+					<li ng-show="showinfo" > <strong> Position: {{maverick.position}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Height: {{maverick.height}} </strong>  </li>
+					<li ng-show="showinfo" > <strong> Weight: {{maverick.weight}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Predraft: {{maverick.predraft}} </strong> </li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>  <!-- end of rockets roster -->	
+
+
+		<!-- start of rockets roster -->
+		<div clas="container-fluid" id="pelicans">
+			<div class="row" id = "pelicans_title">
+				<div class = "col-md-3">
+					<div class = "well">
+						<h1> New Orleans Pelicans </h1>
+
+					</div>
+
+				</div>
+
+				<div class = "col-md-3">
+					<img class="team_logo" class = "responsive-img" src = "http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/nop.png"/>
+
+				</div>
+
+			</div> 
+
+
+			<div class="row">
+				<div class = "col-md-2" style="float:left" ng-repeat="pelican in pelicans" >
+
 	
+					<ul class="player_information">
+
+					<img class="player-image" src = "{{pelican.icon}}" ng-click = "showinfo = !showinfo"/>
+					<p> <strong>{{pelican.name}}</strong> </p> 
+					
+						
+					<li ng-show="showinfo" > <strong> Position: {{pelican.position}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Height: {{pelican.height}} </strong>  </li>
+					<li ng-show="showinfo" > <strong> Weight: {{pelican.weight}} </strong> </li>
+					<li ng-show="showinfo" > <strong> Predraft: {{pelican.predraft}} </strong> </li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>  <!-- end of pelicans roster -->	
 
 
 
 
-
-
-
-
-
-
-
-
+	
 	</div>
 	<!-- end of containter -- >
 

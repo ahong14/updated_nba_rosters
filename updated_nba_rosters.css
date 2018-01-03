@@ -9,7 +9,7 @@ display: block;
 
 .container-fluid{
 	background-color
-	: #eceeef
+		: #eceeef
 }
 
 .jumbotron img{
@@ -47,7 +47,6 @@ ul{
 .player_information{ 	
 	list-style-type: none; 
 }
-
 
 
 
