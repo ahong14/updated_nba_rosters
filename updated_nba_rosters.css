@@ -12,6 +12,10 @@ display: block;
 		: #eceeef
 }
 
+.navbar{
+	height: 75px;
+}
+
 .jumbotron img{
 
 	display:block;
