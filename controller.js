@@ -2,6 +2,7 @@
 roster.controller('MainController', ['$scope', function($scope) { 
   
  var dropdown_clicked = false; 
+ var clicked_image = false;
 
   //animate home button to return to top of page  
 	$scope.home = $('.navbar-brand').click(function()
@@ -26,8 +27,21 @@ roster.controller('MainController', ['$scope', function($scope) {
 
   });
 
+  $scope.show = function(){
+    clicked_image = !clicked_image;
 
-    //fuckkkkk
+    if (clicked_image == true){
+      $(this).children('.player_information').css('visibility', 'visible');
+    }
+
+    else if (clicked_image == false){
+      $(this).find('.player_information').css('visibility', 'hidden');
+    }
+
+  };
+
+
+  
   $scope.hoveron = function(){
       if (dropdown_clicked == true){
         $('.dropdown-menu').css('visibility', 'visible');
@@ -1172,7 +1186,511 @@ roster.controller('MainController', ['$scope', function($scope) {
       weight: '279',
       predraft: 'Connecticut'
     }
+  ],
+
+  $scope.celtics = [
+    {
+      icon: "https://img.bleacherreport.net/img/images/photos/003/701/327/hi-res-6fb98ac8ffdcd8ef8c4adba9ca0acd18_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Kyrie Irving',
+      position: 'G',
+      height: '6-3',
+      weight: '193',
+      predraft: 'Duke'
+
+    },
+
+
+    {
+      icon: "https://nesncom.files.wordpress.com/2017/11/usatsi_10367962_168381014_lowres-e1510158532836.jpg?w=640",
+      name: 'Jaylen Brown', 
+      position: 'G',
+      height: '6-7',
+      weight: '225',
+      predraft: 'California'
+    },
+
+    {
+      icon: "https://www.gannett-cdn.com/-mm-/3f2046a3a109546b42614175171aeb73b96dbae2/c=788-140-1972-1718&r=537&c=0-0-534-712/local/-/media/2017/11/21/USATODAY/USATODAY/636468597287923059-USATSI-10337384.jpg",
+      name: 'Jayson Tatum', 
+      position: 'F',
+      height: '6-8',
+      weight: '205',
+      predraft: 'Duke'
+    },
+
+    {
+      icon: "https://cbsboston.files.wordpress.com/2016/10/gettyimages-618469610.jpg?w=628",
+      name: 'Al Horford',
+      position: 'F',
+      height: '6-10',
+      weight: '245',
+      predraft: 'Florida'
+    },
+
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/S86tMm2ozrCdeHtHwkMRsXUnI3U=/0x0:2578x2427/1200x800/filters:focal(980x768:1392x1180)/cdn.vox-cdn.com/uploads/chorus_image/image/57376655/865371184.0.jpg",
+      name: 'Aron Baynes',
+      position: 'C',
+      height: '6-10',
+      weight: '260', 
+      predraft: 'Washington State'
+    }
+
+  ],
+
+  $scope.nets = [
+    {
+      icon: "http://assets.nydailynews.com/polopoly_fs/1.3154569.1494467337!/img/httpImage/image.jpg_gen/derivatives/article_750/linracismweb11s-1-web.jpg",
+      name: 'Jeremy Lin',
+      position: 'G',
+      height: '6-3',
+      weight: '200',
+      predraft: 'Harvard'
+
+    },
+
+
+    {
+      icon: "https://cdn.nba.net/nba-drupal-prod/styles/landscape/s3/2017-11/russellhl_0.jpg?itok=oQ1bHhVT",
+      name: "D'Angelo Russell", 
+      position: 'G',
+      height: '6-5',
+      weight: '195',
+      predraft: 'Ohio State'
+    },
+
+    {
+      icon: "https://cdn.newsday.com/polopoly_fs/1.14561258.1508557810!/httpImage/image.jpeg_gen/derivatives/landscape_768/image.jpeg",
+      name: 'DeMare Caroll', 
+      position: 'F',
+      height: '6-8',
+      weight: '215',
+      predraft: 'Missouri'
+    },
+
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/MoELIWsjEseeHfi1N0mGZEZIIYI=/0x0:3632x2421/1200x800/filters:focal(1613x637:2193x1217)/cdn.vox-cdn.com/uploads/chorus_image/image/57425491/usa_today_10384772.0.jpg",
+      name: 'Rondae Hollis-Jefferson',
+      position: 'F',
+      height: '6-7',
+      weight: '214',
+      predraft: 'Arizona'
+    },
+
+    {
+      icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fkeepingitheel.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F12%2F896325844-sacramento-kings-v-brooklyn-nets.jpg.jpg&c=sc&w=850&h=560",
+      name: 'Tyler Zeller',
+      position: 'C',
+      height: '7-0',
+      weight: '250',
+      predraft: 'North Carolina'
+    }
+
+  ],
+
+  $scope.sixers = [
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/ITmoJyA8tB9SL54GGjxu7EwMdi0=/0x0:4121x2748/1200x800/filters:focal(1732x1045:2390x1703)/cdn.vox-cdn.com/uploads/chorus_image/image/57194871/usa_today_10338309.0.jpg",
+      name: 'Ben Simmons',
+      position: 'F',
+      height: '6-10',
+      weight: '230',
+      predraft: 'LSU'
+
+    },
+
+
+    {
+      icon: "https://media.gq.com/photos/59ee651324789d7510df1e8f/master/pass/jj-redick-interview-gq.jpg",
+      name: 'J.J. Reddick',
+      position: 'G',
+      height: '6-4',
+      weight: '200',
+      predraft: 'Duke'
+    },
+
+    {
+      icon: "https://cdn-s3.si.com/s3fs-public/2017/03/09/robert-covington-defense.jpg",
+      name: 'Robert Covington',
+      position: 'F',
+      height: '6-9',
+      weight: '225',
+      predraft: 'Tennessee State'
+    },
+
+    {
+      icon: "https://cdn.fansided.com/wp-content/blogs.dir/98/files/2016/10/9594558-nba-preseason-washington-wizards-philadelphia-76ers-1-850x552.jpg",
+      name: 'Dario Saric',
+      position: 'F',
+      height: '6-10',
+      weight: '223',
+      predraft: 'Croatia'
+    },
+
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/kRpelpb1756ua-P2rbpAq08p7-I=/0x0:3756x2672/1200x800/filters:focal(1578x1036:2178x1636)/cdn.vox-cdn.com/uploads/chorus_image/image/57628409/usa_today_10415474.0.jpg",
+      name: 'Joel Embiid',
+      position: 'C',
+      height: '7-0',
+      weight: '250',
+      predraft: 'Kansas'
+    }
+
+  ],
+
+
+  $scope.raptors = [
+    {
+      icon: "https://usatftw.files.wordpress.com/2016/05/usp-nba_-playoffs-miami-heat-at-toronto-raptors.jpg?w=1000&h=600&crop=1",
+      name: 'Kyle Lowry',
+      position: 'G',
+      height: '6-0',
+      weight: '205',
+      predraft: 'Villanova'
+
+    },
+
+
+    {
+      icon: "http://images.performgroup.com/di/library/Sporting_News_CA_CMS_image_storage/d9/f2/demar-derozan-raptors-ftr-110317-getty_bgiqbze0sn4b1ixyqafe2z2ob.jpg?t=-2067413401&w=960&quality=70",
+      name: 'DeMar DeRozan',
+      position: 'G',
+      height: '6-7',
+      weight: '220',
+      predraft: 'USC'
+    },
+
+    {
+      icon: "http://a.espncdn.com/photo/2017/1114/r288819_608x342_16-9.jpg",
+      name: 'OG Anuoby',
+      position: 'F',
+      height: '6-8',
+      weight: '235',
+      predraft: 'Indiana'
+    },
+
+    {
+      icon: "http://assets3.sportsnet.ca/wp-content/uploads/2017/03/serge_ibaka.jpg",
+      name: 'Serge Ibaka',
+      position: 'F',
+      height: '6-10',
+      weight: '235',
+      predraft: 'Congo'
+    },
+
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/597/476/hi-res-c4ffcca99eeb96550a9a31501054e348_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Jonas Valanciunas',
+      position: 'C',
+      height: '7-0',
+      weight: '255',
+      predraft: 'Lithuania'
+    }
+
+  ],
+
+  $scope.knicks = [
+    {
+      icon: "https://thenypost.files.wordpress.com/2017/10/jarrett_jack.jpg?quality=90&strip=all",
+      name: 'Jarrett Jack',
+      position: 'G',
+      height: '6-3',
+      weight: '200',
+      predraft: 'Georgia Tech'
+
+    },
+
+
+    {
+      icon: "http://www1.pictures.zimbio.com/gi/New+York+Knicks+v+Houston+Rockets+JlI2Ca-Sr31l.jpg",
+      name: 'Courtney Lee',
+      position: 'G',
+      height: '6-5',
+      weight: '200',
+      predraft: 'Western Kentucky'
+    },
+
+    {
+      icon: "https://cdn.newsday.com/polopoly_fs/1.15563730.1513996052!/httpImage/image.jpeg_gen/derivatives/landscape_768/image.jpeg",
+      name: 'Michael Beasley',
+      position: 'F',
+      height: '6-9',
+      weight: '235',
+      predraft: 'Kansas State'
+    },
+
+    {
+      icon: "https://usatftw.files.wordpress.com/2016/03/usp_nba__toronto_raptors_at_new_york_knicks_79893174.jpg?w=1000&h=600&crop=1",
+      name: 'Kristaps Porzingis',
+      position: 'F',
+      height: '7-3',
+      weight: '240',
+      predraft: 'Latvia'
+    },
+
+    {
+      icon: "https://cdn.elitesportsny.com/wp-content/uploads/2017/11/GettyImages-870695288-640x432.jpg",
+      name: 'Enes Kanter',
+      position: 'C',
+      height: '6-11',
+      weight: '245',
+      predraft: 'Kentucky'
+    }
+
   ];
+
+
+  // $scope.heats = [
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+
+  //   },
+
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   }
+
+  // ],
+
+  // $scope.hornets = [
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+
+  //   },
+
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   }
+
+  // ],
+
+  // $scope.magics = [
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+
+  //   },
+
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   }
+
+  // ],
+
+
+  // $scope.hawks = [
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+
+  //   },
+
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   }
+
+  // ],
+
+
+  // $scope.wizards = [
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+
+  //   },
+
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   },
+
+  //   {
+  //     icon:
+  //     name:
+  //     position:
+  //     height:
+  //     weight:
+  //     predraft:
+  //   }
+
+  // ],
 
 }]); //end of controller
  
