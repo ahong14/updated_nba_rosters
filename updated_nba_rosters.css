@@ -49,30 +49,32 @@ ul{
 }
 
 .player_information{ 	
-	list-style-type: none; 
+	list-style-type: none;
 }
 
-
-
-
-
-
-.fade.ng-show{
-	transition: all linear 0.5s;
-	opacity: 0;
-}
-
-.fade.ng-show.ng-show-active{
-	opacity: 1;
+.ng-hide:not(.ng-hide-animate) {
+  /* These are just alternative ways of hiding an element */
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 .fade.ng-hide{
-	transition: all linear 0.5s;
-	opacity:1;
-}
-
-.fade.ng-hide.ng-hide-active{
 	opacity: 0;
 }
+
+.fade.ng-hide-add{
+	transition: all linear 1s;
+}
+
+.fade.ng-hide-remove{
+	transition: all linear 1s;
+	display:block!important;
+}
+	
+	
+
+
 
 
