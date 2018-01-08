@@ -1440,257 +1440,258 @@ roster.controller('MainController', ['$scope', function($scope) {
   ];
 
 
-  // $scope.heats = [
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
+  $scope.heats = [
+    {
+      icon: "http://www.trbimg.com/img-58995a2b/turbine/sfl-miami-heat-ask-ira-goran-dragic-s020717",
+      name: 'Goran Dragic',
+      position: 'G',
+      height: '6-3',
+      weight: '190',
+      predraft: 'Yugoslavia'
 
-  //   },
-
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   }
-
-  // ],
-
-  // $scope.hornets = [
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-
-  //   },
+    },
 
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+    {
+      icon: "http://heatnation.com/wp-content/uploads/2016/11/heat-wizards-basketball-jpe-1.jpg",
+      name: 'Dion Waiters',
+      position: 'G',
+      height: '6-4',
+      weight: '215',
+      predraft: 'Syracuse'
+    },
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+    {
+      icon: "https://cdn2.newsok.biz/cache/w640-7c245f859fe64bd868e247677164c046.jpg",
+      name: 'Josh Richardson',
+      position: 'G',
+      height: '6-6',
+      weight: '200',
+      predraft: 'Tennessee'
+    },
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+    {
+      icon: "https://cmgpbpheatzone.files.wordpress.com/2017/10/hawks_heat_basketball_33858.jpg",
+      name: 'Kelly Olynk',
+      position: 'F',
+      height: '7-0',
+      weight: '245',
+      predraft: 'Gonzaga'
+    },
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   }
+    {
+      icon: "https://img.bleacherreport.net/img/images/photos/003/703/372/hi-res-3d9038eff33c212a532ccb55d70a776a_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Hassan Whiteside',
+      position: 'C',
+      height: '7-0',
+      weight: '265',
+      predraft: 'Marshall'
+    }
 
-  // ],
+  ],
 
-  // $scope.magics = [
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
+  $scope.hornets = [
+    {
+      icon: "http://i.cdn.turner.com/drp/nba/hornets/sites/default/files/styles/story_main_photo/public/150126_walker_inside.jpg?itok=CkKc8iRk",
+      name: 'Kemba Walker',
+      position: 'G',
+      height: '6-1',
+      weight: '184',
+      predraft: 'Connecticut'
 
-  //   },
-
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
-
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   }
-
-  // ],
+    },
 
 
-  // $scope.hawks = [
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
+    {
+      icon: "http://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2017%2F0212%2Fr180303_1296x729_16%2D9.jpg",
+      name: 'Nicolas Batum',
+      position: 'G',
+      height: '6-8',
+      weight: '200',
+      predraft: 'France'
+    },
 
-  //   },
+    {
+      icon: "https://swarmandsting.com/wp-content/blogs.dir/179/files/2014/12/michael-kidd-gilchrist-nba-preseason-indiana-pacers-charlotte-hornets.jpg",
+      name: 'Michael Kidd-Gilchrist',
+      position: 'F',
+      height: '6-7',
+      weight: '232',
+      predraft: 'Kentucky'
+    },
 
+    {
+      icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fswarmandsting.com%2Ffiles%2F2016%2F09%2F9265865-marvin-williams-nba-playoffs-miami-heat-charlotte-hornets.jpg&c=sc&w=850&h=560",
+      name: 'Marvin Williams',
+      position: 'F',
+      height: '6-9',
+      weight: '237',
+      predraft: 'North Carolina'
+    },
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+    {
+      icon: "https://capsportsreport.files.wordpress.com/2017/10/w1080xh810_gettyimages-856836076.jpg?w=450&h=338",
+      name: 'Dwight Howard',
+      position: 'C',
+      height: '6-11',
+      weight: '265',
+      predraft: 'Southwest Atlanta Christian (HS)'
+    }
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+  ],
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+  $scope.magics = [
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/5bjJ9jxk2HGCrJFTjnhR-uGTTew=/0x172:2400x3600/1200x800/filters:focal(817x427:1201x811)/cdn.vox-cdn.com/uploads/chorus_image/image/55793009/618902692.0.jpg",
+      name: 'Elfrid Payton',
+      position: 'G',
+      height: '6-4',
+      weight: '185',
+      predraft: 'Louisana-Lafayette'
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   }
-
-  // ],
-
-
-  // $scope.wizards = [
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-
-  //   },
+    },
 
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+    {
+      icon: "http://hoopshabit.com/wp-content/uploads/usat-images/2016/04/9864308-nba-houston-rockets-at-orlando-magic.jpeg",
+      name: 'Evan Fournier',
+      position: 'G',
+      height: '6-7',
+      weight: '205',
+      predraft: 'France'
+    },
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+    {
+      icon: "http://a.espncdn.com/photo/2017/1115/r289328_608x342_16-9.jpg",
+      name: 'Jonathan Simmons',
+      position: 'F',
+      height: '6-6',
+      weight: '195',
+      predraft: 'Houston'
+    },
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   },
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/553/889/hi-res-42ceb0e9cb09297a3c7e64b664906af0_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Aaron Gordon',
+      position: 'F',
+      height: '6-9',
+      weight: '220',
+      predraft: 'Arizona'
+    },
 
-  //   {
-  //     icon:
-  //     name:
-  //     position:
-  //     height:
-  //     weight:
-  //     predraft:
-  //   }
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/614/050/hi-res-d8e34401d5ae0b14138b14a5cf61f193_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Nikola Vucevic',
+      position: 'C',
+      height: '7-0',
+      weight: '260',
+      predraft: 'USC'
+    }
 
-  // ],
+  ],
+
+
+
+  $scope.hawks = [
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/661/123/hi-res-fe08e14fa49e00f6c16a9e7d29c680cf_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Dennis Schroder',
+      position: 'G',
+      height: '6-1',
+      weight: '172',
+      predraft:'Germany'
+
+    },
+
+
+    {
+      icon: "https://soaringdownsouth.com/wp-content/blogs.dir/131/files/2016/09/9024232-kent-bazemore-nba-atlanta-hawks-houston-rockets.jpg",
+      name: 'Kent Bazemore',
+      position: 'G',
+      height: '6-5',
+      weight: '201',
+      predraft: 'Old Dominion'
+    },
+
+    {
+      icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fhoopshabit.com%2Ffiles%2F2016%2F11%2F9604605-taurean-prince-nba-preseason-detroit-pistons-atlanta-hawks.jpg&c=sc&w=850&h=560",
+      name: 'Taurean Prince', 
+      position: 'F', 
+      height: '6-8',
+      weight: '220',
+      predraft: 'Baylor'
+    },
+
+    {
+      icon: "http://a.espncdn.com/photo/2017/0310/r188941_608x342_16-9.jpg",
+      name: 'Ersan Ilysova',
+      position: 'F',
+      height: '6-10',
+      weight: '235',
+      predraft: 'Turkey'
+    },
+
+    {
+      icon: "https://soaringdownsouth.com/wp-content/blogs.dir/131/files/2016/10/9110074-mike-muscala-nba-atlanta-hawks-philadelphia-76ers-1.jpg",
+      name: 'Mike Muscala',
+      position: 'C',
+      height: '6-11',
+      weight: '240',
+      predraft: 'Bucknell'
+    }
+
+  ],
+
+
+  $scope.wizards = [
+    {
+      icon: "https://cdn.vox-cdn.com/thumbor/YiwkhptJtGsKcuJmQtizw8ZfCfs=/0x280:2666x2057/1200x800/filters:focal(0x280:2666x2057)/cdn.vox-cdn.com/uploads/chorus_image/image/17176235/20130415_krg_aw8_062.0.jpg",
+      name: 'John Wall',
+      position: 'G',
+      height: '6-4',
+      weight: '210',
+      predraft: 'Kentucky'
+
+    },
+
+
+    {
+      icon: "http://www.slamonline.com/wp-content/uploads/2017/12/BealFeature.jpg",
+      name: 'Bradley Beal',
+      position: 'G',
+      height: '6-5',
+      weight:'207',
+      predraft: 'Florida'
+    },
+
+    {
+      icon: "http://img.bleacherreport.net/img/images/photos/003/645/044/hi-res-fc3cb2848474bef5a0adc13b981e469e_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top",
+      name: 'Otto Porter Jr.',
+      position: 'F',
+      height: '6-8',
+      weight: '198',
+      predraft: 'Georgetown'
+    },
+
+    {
+      icon: "https://usatftw.files.wordpress.com/2017/05/gty_674625010_90555276.jpg?w=1000&h=600&crop=1",
+      name: 'Markieff Morris', 
+      position: 'F',
+      height: '6-10',
+      weight: '245',
+      predraft: 'Kansas'
+    },
+
+    {
+      icon: "https://cdn-s3.si.com/s3fs-public/2015/01/08/washington-wizards-marcin-gortat-action-figure.jpg",
+      name: 'Marcin Gortat',
+      position: 'C',
+      height: '6-11',
+      weight: '240',
+      predraft: 'Poland'
+    }
+
+  ];
 
 }]); //end of controller
  

@@ -29,6 +29,10 @@ display: block;
 	width: 100px;
 }
 
+.dropdown_image{
+	width: 40px;
+	height: 40px;
+}
 
 .player-image{
 	width:220px;
