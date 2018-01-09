@@ -39,6 +39,11 @@ display: block;
 	height:240px;
 }
 
+.slide_image{
+	height: 700px;
+	width: 1100px;
+}
+
 
 .player-image:hover{
 	transition: all linear 0.5s;
