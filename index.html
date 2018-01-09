@@ -168,12 +168,12 @@
 
 					  <!-- Left and right controls -->
 					  <a class="carousel-control-prev" href="#myCarousel" role="button"  data-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true""></span>
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					    <span class="sr-only">Previous</span>
 					  </a>
 
-					  <a class="right carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"" aria-hidden="true""></span>
+					  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 					    <span class="sr-only">Next</span>
 					  </a>
 
@@ -215,18 +215,19 @@
 				<!-- <playerInfo info="stephen_curry"> </playerInfo> -->
 
 
-				
-				<img class="player-image" src = "{{warrior.icon}}" ng-click = "showinfo = !showinfo" />
-				<p> <strong> {{warrior.name}} </strong> </p> 
-				
-				<ul class="player_information" class = "fade" ng-show = "showinfo" >
 					
-					<li> <strong> Position: {{warrior.position}} </strong> </li>
-					<li> <strong> Height: {{warrior.height}} </strong>  </li>
-					<li> <strong> Weight: {{warrior.weight}} </strong> </li>
-					<li> <strong> Predraft: {{warrior.predraft}} </strong> </li>
+					<img class="player-image" src = "{{warrior.icon}}" ng-click = "showInfo = !showInfo"  />
+					<p> <strong> {{warrior.name}} </strong> </p> 
+						
+					<ul class="player_information" ng-show = "showInfo">
+							
+						<li> <strong> Position: {{warrior.position}} </strong> </li>
+						<li> <strong> Height: {{warrior.height}} </strong>  </li>
+						<li> <strong> Weight: {{warrior.weight}} </strong> </li>
+						<li> <strong> Predraft: {{warrior.predraft}} </strong> </li>
 
-				</ul>
+					</ul>
+					
 
 				</div>
 
