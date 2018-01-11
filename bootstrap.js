@@ -549,7 +549,7 @@ var Carousel = function ($) {
     interval: 5000,
     keyboard: true,
     slide: false,
-    pause: 'hover',
+    pause: 'none',
     wrap: true
   };
 
