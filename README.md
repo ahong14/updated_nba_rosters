@@ -16,9 +16,11 @@ on division. Each division contains
 associated teams as a dropdown item
 for user to choose from. When clicking 
 a team, the site animates to that team's
-page id and its roster is shown.
+page id and its roster is shown. User can
+jump to different teams using the navbar
+at the top of the page.
 
-Used bootstrap to create a carousel
+Used Bootstrap to create a carousel
 of slideshow images within a jumbotron
 to provide an introduction to the page.
 
