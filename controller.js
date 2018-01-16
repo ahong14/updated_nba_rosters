@@ -841,7 +841,7 @@ roster.controller('MainController', ['$scope', function($scope) {
   },
 
   {
-    icon:  "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fkingjamesgospel.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F10%2F860639322-chicago-bulls-vs-cleveland-cavaliers.jpg.jpg&c=sc&w=850&h=560",
+    icon:  "https://d1tjohjvimcqgl.cloudfront.net/category/39901_n.jpg",
     name: 'Jae Crowder',
     position: 'F',
     height: '6-6',
