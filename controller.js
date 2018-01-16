@@ -71,7 +71,7 @@ roster.controller('MainController', ['$scope', function($scope) {
 
    {
 
-     icon: "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-s3.si.com%2Fs3fs-public%2F2016%2F09%2F13%2Fdraymond_green_top_100_.jpg&w=700&q=85", 
+     icon: "http://a.espncdn.com/photo/2016/0311/r62390_600x400_3-2.jpg", 
      name: 'Draymond Green',
      position: 'F',
      height: "6-7",
@@ -1005,7 +1005,7 @@ roster.controller('MainController', ['$scope', function($scope) {
   },
 
   {
-    icon: "https://s3media.247sports.com/Uploads/Assets/326/578/6_4578326.jpg",
+    icon: "http://img.bleacherreport.net/img/images/photos/003/579/649/hi-res-4dedd9a15cbe0240e9b2271ad0ee3147_crop_north.jpg?1457105473&w=630&h=420",
     name: 'Myles Turner',
     position: 'C',
     height: '6-11',
@@ -1085,7 +1085,7 @@ roster.controller('MainController', ['$scope', function($scope) {
   },
 
   {
-    icon: "https://www.gannett-cdn.com/-mm-/3f2046a3a109546b42614175171aeb73b96dbae2/c=788-140-1972-1718&r=537&c=0-0-534-712/local/-/media/2017/11/21/USATODAY/USATODAY/636468597287923059-USATSI-10337384.jpg",
+    icon: "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fhoopshabit.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2018%2F01%2F899407872-houston-rockets-v-boston-celtics.jpg.jpg&c=sc&w=850&h=560",
     name: 'Jayson Tatum', 
     position: 'F',
     height: '6-8',
@@ -1094,7 +1094,7 @@ roster.controller('MainController', ['$scope', function($scope) {
   },
 
   {
-    icon: "https://cbsboston.files.wordpress.com/2016/10/gettyimages-618469610.jpg?w=628",
+    icon: "http://assets.nydailynews.com/polopoly_fs/1.2893054.1480530766!/img/httpImage/image.jpg_gen/derivatives/article_750/horford1s-1-web.jpg",
     name: 'Al Horford',
     position: 'F',
     height: '6-10',
