@@ -1,4 +1,4 @@
-# updated_nba_rosters
+https://ahong14.github.io/updated_nba_rosters/
 
 Updated version from previous project.
 Applied frameworks such as Bootstrap and
