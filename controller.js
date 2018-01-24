@@ -814,7 +814,7 @@ roster.controller('MainController', ['$scope', function($scope) {
 
   $scope.cavs = [
   {
-    icon:"http://www.nbcsports.com/boston/sites/csnne/files/styles/article_hero_image/public/2018/01/03/cp-cavs-isaiah-thomas-010318.jpg?itok=lpvajjfs",
+    icon:"https://suntimesmedia.files.wordpress.com/2018/01/warriors_cavaliers_basketball_73586941.jpg?w=763",
     name: 'Isaiah Thomas',
     position: 'G',
     height: '5-9',
